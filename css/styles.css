@@ -536,16 +536,6 @@ img {
   margin-left: auto;
 }
 
-.text-subscr {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-  position: relative;
-  margin-bottom: 16px;
-}
-
 .footer-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -553,6 +543,11 @@ img {
   width: 264px;
   height: 40px;
   padding-left: 16px;
+  outline: transparent;
+}
+
+.footer-input:focus {
+  border-color: #31d0aa;
 }
 
 .footer-input::placeholder {
@@ -564,19 +559,36 @@ img {
 }
 
 .footer-btn {
+  display: flex;
   border-radius: 4px;
   padding: 8px 24px;
   background-color: #4d5ae5;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
+
   color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #31d0aa;
+}
+
+.text-subscr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  position: relative;
+  margin-bottom: 16px;
 }
 
 .sbscr-item {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .footer-form {
@@ -709,11 +721,24 @@ img {
   background-color: #404bbf;
 }
 
-.modal-close-btn {
+.close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
+  border-radius: 100%;
+  fill: #e7e9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
 }
+
+.modal-close-btn {
+  fill: #2e2f42;
+}
+
 .modal-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
