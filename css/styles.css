@@ -693,6 +693,10 @@ img {
   margin-bottom: 8px;
 }
 
+.modal-field-com {
+  margin-bottom: 16px;
+}
+
 .modal-label {
   font-weight: 400;
   font-size: 12px;
@@ -830,7 +834,7 @@ img {
   fill: #f4f4fd;
 }
 
-.modal-chek-field {
+.modal-cheсk-field {
   margin-bottom: 24px;
 }
 
